@@ -12,7 +12,7 @@
   "homepage": "https://pipedream.com/apps/google_dialogflow",
   "author": "Pipedream <support@pipedream.com> (https://pipedream.com/)",
   "dependencies": {
-    "@google-cloud/dialogflow": "^5.1.0"
+    "@google-cloud/dialogflow": "^6.0.0"
   },
   "publishConfig": {
     "access": "public"
