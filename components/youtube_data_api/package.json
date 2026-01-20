@@ -10,7 +10,7 @@
   "homepage": "https://pipedream.com/apps/youtube_data_api",
   "author": "Pipedream <support@pipedream.com> (https://pipedream.com/)",
   "dependencies": {
-    "@googleapis/youtube": "^6.0.0",
+    "@googleapis/youtube": "^11.0.1",
     "@pipedream/platform": "^3.0.3",
     "got": "^14.4.6",
     "util": "^0.12.4"
