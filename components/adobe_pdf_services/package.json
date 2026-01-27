@@ -13,6 +13,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@adobe/pdfservices-node-sdk": "^3.4.2"
+    "@adobe/pdfservices-node-sdk": "^4.0.0"
   }
 }
