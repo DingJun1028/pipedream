@@ -16,9 +16,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@googleapis/admin": "^6.0.2",
+    "@googleapis/admin": "^12.4.0",
     "@pipedream/platform": "^1.2.0",
-    "googleapis": "^108.0.0",
+    "googleapis": "^124.0.0",
     "uuidv4": "^6.2.13"
   },
   "devDependencies": {
