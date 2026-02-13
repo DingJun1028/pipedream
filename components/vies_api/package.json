@@ -14,6 +14,6 @@
   },
   "dependencies": {
     "@pipedream/platform": "^1.5.1",
-    "viesapi-client": "^1.2.5"
+    "viesapi-client": "^1.2.8"
   }
 }
