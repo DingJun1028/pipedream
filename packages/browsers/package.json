@@ -17,7 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "@sparticuz/chromium": "121.0.0",
-    "puppeteer-core": "21.11.0",
+    "puppeteer-core": "22.13.1",
     "playwright-core": "1.41.2"
   }
 }
