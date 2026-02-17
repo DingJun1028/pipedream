@@ -99,10 +99,13 @@ export default {
         .listCollections()
         .toPromise();
     },
-    listWorkflowSteps() {
-      return this._managementClient()
-        .listWorkflowSteps()
+    async listWorkflowSteps() {
+      const { data: workflows } = await this._managementClient()
+        .listWorkflows()
         .toPromise();
+      
+      // Flatten all workflow steps from all workflows
+      return workflows.flatMap(workflow => workflow.steps);
     },
   },
 };
