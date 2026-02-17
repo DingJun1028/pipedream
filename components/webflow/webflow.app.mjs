@@ -84,13 +84,16 @@ export default {
       });
     },
     async createWebhook(siteId, data) {
-      return this.webflowClient().webhooks.create(siteId, data);
+      const response = await this.webflowClient().webhooks.create(siteId, data);
+      return response?.data;
     },
     async removeWebhook(webhookId) {
-      return this.webflowClient().webhooks.delete(webhookId);
+      const response = await this.webflowClient().webhooks.delete(webhookId);
+      return response?.data;
     },
     async getOrder(siteId, orderId) {
-      return this.webflowClient().orders.get(siteId, orderId);
+      const response = await this.webflowClient().orders.get(siteId, orderId);
+      return response?.data;
     },
     async listOrders({
       page: offset = 0, siteId, status,
@@ -99,27 +102,29 @@ export default {
         offset,
         status,
       });
-      return response?.orders;
+      return response?.data?.orders;
     },
     async listDomains(siteId) {
       const response = await this.webflowClient().sites.getCustomDomain(siteId);
-      return response?.customDomains;
+      return response?.data?.customDomains;
     },
-    getSite(siteId) {
-      return this.webflowClient().sites.get(siteId);
+    async getSite(siteId) {
+      const response = await this.webflowClient().sites.get(siteId);
+      return response?.data;
     },
     async listSites() {
       const response = await this.webflowClient().sites.list();
-      return response?.sites;
+      return response?.data?.sites;
     },
-    getCollection(collectionId) {
-      return this.webflowClient().collections.get(collectionId);
+    async getCollection(collectionId) {
+      const response = await this.webflowClient().collections.get(collectionId);
+      return response?.data;
     },
     async listCollections(siteId) {
       if (!siteId) return [];
 
       const response = await this.webflowClient().collections.list(siteId);
-      return response?.collections;
+      return response?.data?.collections;
     },
     async listCollectionItems(page = 0, collectionId) {
       if (!collectionId) return [];
@@ -129,42 +134,53 @@ export default {
         offset: page,
       });
 
-      return response?.items;
+      return response?.data?.items;
     },
-    getCollectionItem(collectionId, itemId) {
-      return this.webflowClient().collections.items.getItem(collectionId, itemId);
+    async getCollectionItem(collectionId, itemId) {
+      const response = await this.webflowClient().collections.items.getItem(collectionId, itemId);
+      return response?.data;
     },
-    deleteCollectionItem(collectionId, itemId) {
-      return this.webflowClient().collections.items.deleteItem(collectionId, itemId);
+    async deleteCollectionItem(collectionId, itemId) {
+      const response = await this.webflowClient().collections.items.deleteItem(collectionId, itemId);
+      return response?.data;
     },
-    createCollectionItem(collectionId, data) {
-      return this.webflowClient().collections.items.createItem(collectionId, data);
+    async createCollectionItem(collectionId, data) {
+      const response = await this.webflowClient().collections.items.createItem(collectionId, { body: data });
+      return response?.data;
     },
-    updateCollectionItem(collectionId, itemId, data) {
-      return this.webflowClient().collections.items.updateItem(collectionId, itemId, data);
+    async updateCollectionItem(collectionId, itemId, data) {
+      const response = await this.webflowClient().collections.items.updateItem(collectionId, itemId, { body: data });
+      return response?.data;
     },
-    getCollectionItemInventory(collectionId, itemId) {
-      return this.webflowClient().inventory.list(collectionId, itemId);
+    async getCollectionItemInventory(collectionId, itemId) {
+      const response = await this.webflowClient().inventory.list(collectionId, itemId);
+      return response?.data;
     },
-    updateCollectionItemInventory(collectionId, itemId, data) {
-      return this.webflowClient().inventory.update(collectionId, itemId, data);
+    async updateCollectionItemInventory(collectionId, itemId, data) {
+      const response = await this.webflowClient().inventory.update(collectionId, itemId, data);
+      return response?.data;
     },
-    publishSite(siteId, customDomains) {
-      return this.webflowClient().sites.publish(siteId, {
+    async publishSite(siteId, customDomains) {
+      const response = await this.webflowClient().sites.publish(siteId, {
         customDomains,
       });
+      return response?.data;
     },
-    fulfillOrder(siteId, orderId, data) {
-      return this.webflowClient().orders.updateFulfill(siteId, orderId, data);
+    async fulfillOrder(siteId, orderId, data) {
+      const response = await this.webflowClient().orders.updateFulfill(siteId, orderId, data);
+      return response?.data;
     },
-    unfulfillOrder(siteId, orderId) {
-      return this.webflowClient().orders.updateUnfulfill(siteId, orderId);
+    async unfulfillOrder(siteId, orderId) {
+      const response = await this.webflowClient().orders.updateUnfulfill(siteId, orderId);
+      return response?.data;
     },
-    refundOrder(siteId, orderId) {
-      return this.webflowClient().orders.refund(siteId, orderId);
+    async refundOrder(siteId, orderId) {
+      const response = await this.webflowClient().orders.refund(siteId, orderId);
+      return response?.data;
     },
-    updateOrder(siteId, orderId, data) {
-      return this.webflowClient().orders.update(siteId, orderId, data);
+    async updateOrder(siteId, orderId, data) {
+      const response = await this.webflowClient().orders.update(siteId, orderId, data);
+      return response?.data;
     },
   },
 };
