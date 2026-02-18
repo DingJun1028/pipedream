@@ -13,6 +13,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@qdrant/js-client-rest": "^1.11.0"
+    "@qdrant/js-client-rest": "^1.14.1"
   }
 }
