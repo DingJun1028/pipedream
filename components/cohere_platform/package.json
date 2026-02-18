@@ -13,6 +13,6 @@
     "access": "public"
   },
   "dependencies": {
-    "cohere-ai": "^7.10.6"
+    "cohere-ai": "^7.18.0"
   }
 }
