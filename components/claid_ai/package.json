@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@pipedream/platform": "^1.5.1",
-    "form-data": "^4.0.0",
+    "form-data": "^4.0.4",
     "fs": "^0.0.1-security",
     "url-exist": "^3.0.1"
   }
