@@ -15,7 +15,7 @@
   "dependencies": {
     "@pipedream/platform": "^1.2.0",
     "imap": "^0.8.19",
-    "mailparser": "^3.5.0",
+    "mailparser": "^3.9.1",
     "stream": "^0.0.2",
     "util": "^0.12.4"
   }
