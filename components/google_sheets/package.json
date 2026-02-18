@@ -10,7 +10,7 @@
   "homepage": "https://pipedream.com/apps/google_sheets",
   "author": "Pipedream <support@pipedream.com> (https://pipedream.com/)",
   "dependencies": {
-    "@googleapis/sheets": "^0.3.0",
+    "@googleapis/sheets": "^5.0.4",
     "@pipedream/google_drive": "^0.6.19",
     "@pipedream/platform": "^3.0.0",
     "lodash": "^4.17.21",
