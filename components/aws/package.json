@@ -32,7 +32,7 @@
     "@pipedream/platform": "^3.0.3",
     "adm-zip": "^0.5.10",
     "dedent": "^1.5.1",
-    "mailparser": "^3.6.6",
+    "mailparser": "^3.9.1",
     "mailparser-mit": "^1.0.0",
     "nanoid": "^5.0.4",
     "uuid": "^9.0.1"
