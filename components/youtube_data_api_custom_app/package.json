@@ -13,7 +13,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@googleapis/youtube": "^6.0.0",
+    "@googleapis/youtube": "^11.0.1",
     "got": "^12.5.1"
   }
 }
