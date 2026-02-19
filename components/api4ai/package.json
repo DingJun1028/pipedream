@@ -28,7 +28,7 @@
   "author": "API4AI Team <hello@api4.ai> (https://api4.ai/)",
   "dependencies": {
     "@pipedream/platform": "^1.6.2",
-    "form-data": "^4.0.0"
+    "form-data": "^4.0.4"
   },
   "publishConfig": {
     "access": "public"
