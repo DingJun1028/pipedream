@@ -9,7 +9,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.10.2",
+    "@modelcontextprotocol/sdk": "^1.25.2",
     "@pipedream/sdk": "^1.5.4",
     "@supabase/supabase-js": "^2.49.1",
     "cors": "^2.8.5",
